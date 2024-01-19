@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+</head>
+<body>
+  <h1>Registration</h1>
+  <form id="registrationForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+    <button type="submit">Register</button>
+  </form>
+
+  <script>
+    const registrationForm = document.getElementById("registrationForm");
+    registrationForm.addEventListener("submit", (event) => {
+      event.preventDefault(); // Prevent default form submission
+
+      // Perform validation and registration logic here
+      // For example:
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+
+      // Check password match, validate other fields, and attempt registration
+      // If successful, display a success message or redirect to a login page
+      // If unsuccessful, display appropriate error messages
+    });
+  </script>
+</body>
+</html>

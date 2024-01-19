@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="Scriptlogin.css">
+</head>
+<body>
+  <h1>Sign In to MILLI-PLAN</h1>
+  <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <button type="submit">Sign In</button>
+  </form>
+<h2>MILLI-PLAN</h2>
+<p>For easy planning and more efficiency</p>
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    loginForm.addEventListener("submit", (event) => {
+      event.preventDefault(); // Prevent default form submission
+
+      // Perform validation and authentication logic here
+      // For example:
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // Check credentials against your database or authentication service
+      // If successful, redirect to a protected page or display a success message
+      // If unsuccessful, display an error message
+    });
+  </script>
+</body>
+</html>
+  

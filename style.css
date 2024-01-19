@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3b4ea5; /* Light gray background */
+  }
+  
+  header {
+    background-color: #4a5568; /* Dark blue header */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    margin-right: 15px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .hero h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .hero button {
+    background-color: #4a5568; /* Match header color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .features h3 {
+    margin-bottom: 10px;
+  }
+  
+  .features li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #343a40; /* Darker gray footer */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+ /* img { */
+  /*  width: 100px; /* Set width as needed */
+   /* height: auto; /* Maintain aspect ratio */
+  /*  content: url(Mili1.jpg');
+  } 
+  
+  /* Add styles for other elements as needed */ 
+  
