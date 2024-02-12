@@ -1,25 +1,17 @@
-<nav class="navbar bg-primary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Milliplan</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        Navbar text with an inline element
-      </span>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid flex items-center">
+    <a class="navbar-brand" href="#">
+      <img src="/img/logom.jpg" alt="Logo" width="50" height="40" class="inline-block align-text-top">
+      <span class="ml-2 text-white">{{ config('app.name') }}</span>
+    </a>
+    <div class="flex">
+      @if(auth()->check())
+      <span class="text-white mx-2">{{ auth()->user()->name }}</span>
+      <a href="{{ route('logout') }}" class="btn btn-danger mx-2">Logout</a>
+      @else
+      <a href="{{ route('login') }}" class="btn btn-primary mx-2">Login</a>
+      <a href="{{ route('registration') }}" class="btn btn-success">Register</a>
+      @endif
     </div>
   </div>
 </nav>
-
